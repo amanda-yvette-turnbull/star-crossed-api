@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth0_id: MyString
+  string: MyString
+  name: MyString
+  string: MyString
+  age: MyString
+  integer: MyString
+  email: MyString
+  string: MyString
+  gender: MyString
+  string: MyString
+  preference: MyString
+  string: MyString
+  bio: MyString
+  string: MyString
+  birthday: MyString
+  string: MyString
+  image: MyString
+  string: MyString
+  star_sign_id: MyString
+  integer: MyString
+  matches: MyString
+  string: MyString
+  compatibility: MyString
+  string: MyString
+
+two:
+  auth0_id: MyString
+  string: MyString
+  name: MyString
+  string: MyString
+  age: MyString
+  integer: MyString
+  email: MyString
+  string: MyString
+  gender: MyString
+  string: MyString
+  preference: MyString
+  string: MyString
+  bio: MyString
+  string: MyString
+  birthday: MyString
+  string: MyString
+  image: MyString
+  string: MyString
+  star_sign_id: MyString
+  integer: MyString
+  matches: MyString
+  string: MyString
+  compatibility: MyString
+  string: MyString

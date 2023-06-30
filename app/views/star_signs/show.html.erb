@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @star_sign %>
+
+<div>
+  <%= link_to "Edit this star sign", edit_star_sign_path(@star_sign) %> |
+  <%= link_to "Back to star signs", star_signs_path %>
+
+  <%= button_to "Destroy this star sign", @star_sign, method: :delete %>
+</div>
