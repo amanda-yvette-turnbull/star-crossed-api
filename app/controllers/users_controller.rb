@@ -16,7 +16,12 @@ class UsersController < ApplicationController
 
   # Get a user by auth0 id
   def showauth
-    render json: @user
+    if @user.nil?
+      puts 'not real sorry'
+      redirect_to "http://localhost:5173/signUp", allow_other_host: true
+    else
+      render json: @user
+    end
   end
 
   # Create a user
