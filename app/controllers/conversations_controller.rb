@@ -12,6 +12,12 @@ def show
   render json: @convo
 end
 
+#Get all convos from a user by user id 
+#/conversations/user/:user_id
+def showconvos 
+  @convos = Conversation.find()
+end
+
 Create a convo
 def create
   @convo = Conversation.new(convo_params)
@@ -39,7 +45,7 @@ end
 
 private
 
-#Get a convo and set it as @convo
+#Get a convo by convo_id and set it as @convo
 def set_convo
   @convo = Conversation.find(params[:id])
 end

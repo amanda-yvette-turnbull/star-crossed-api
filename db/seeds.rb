@@ -28,3 +28,6 @@ User.create(auth0_id: '10', name: 'clara', age: 18 , email: 'sampleemail@gmail.c
 User.create(auth0_id: '11', name: 'dante', age: 18 , email: 'sampleemail@gmail.com', gender: 'masc', preference: '["femme"]', bio: 'this is my bio', birthday: '', image: 'images/user', star_sign_id: '10', matches: '[]', compatibility: '[5,4,2,1,3,1,4,2,5,1,3,1]')
 User.create(auth0_id: '12', name: 'juliette', age: 18 , email: 'sampleemail@gmail.com', gender: 'femme', preference: '["masc"]', bio: 'this is my bio', birthday: '', image: 'images/user', star_sign_id: '12', matches: '[]', compatibility: '[4,3,2,1,3,5,2,1,4,3,5,1]')
 
+Conversation.create(participants:)
+Conversation.create()
+Conversation.create()

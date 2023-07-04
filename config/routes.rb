@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :messages
   get '/auth/:auth0_id', to: 'users#showauth'
   get '/potentials/:id', to: 'users#showpotentials'
+  get '/conversations/user/:user_id', to: 'conversations#showconvos'
+
   
 
 
