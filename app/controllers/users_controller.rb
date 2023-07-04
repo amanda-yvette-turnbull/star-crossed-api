@@ -38,6 +38,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.avatar.attach(params[:avatar])
+    puts @user.avatar
+    puts "it's here!"
     if @user.save
       @user.update(image: url_for(@user.avatar))
       render json: @user, status: :created
