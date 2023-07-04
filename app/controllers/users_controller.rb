@@ -43,6 +43,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.update(image: url_for(@user.avatar))
       render json: @user, status: :created
+      puts @user.preference
     else
       render json: @user.errors, status: :unprocessable_entity
     end
