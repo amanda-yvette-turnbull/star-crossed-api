@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :star_signs
   resources :users
   get '/auth/:auth0_id', to: 'users#showauth'
+  get '/potentials/:id', to: 'users#showpotentials'
+  
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

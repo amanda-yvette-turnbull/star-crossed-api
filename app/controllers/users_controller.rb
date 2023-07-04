@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :set_user_by_auth, only: [:showauth]
   skip_before_action :verify_authenticity_token
 
+
   # Get all users
   def index
     @users = User.joins(:star_sign).select('users.*, star_signs.id AS star_sign')
@@ -21,6 +22,11 @@ class UsersController < ApplicationController
     else
       render json: @user
     end
+  end
+
+  def showpotentials
+    @user = User.select('preference').find(params[:id])
+    puts @user.preference
   end
 
   # Create a user
