@@ -30,6 +30,15 @@ gem "jbuilder"
 # Rack::CORS middleware
 gem 'rack-cors'
 
+# Libvibs Bindings
+
+gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
+
+# Image processing for active storage
+
+gem "image_processing", ">= 1.2"
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

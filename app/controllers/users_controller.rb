@@ -26,7 +26,9 @@ class UsersController < ApplicationController
   # Create a user
   def create
     @user = User.new(user_params)
+    @user.avatar.attach(params[:avatar])
     if @user.save
+      @user.update(image: url_for(@user.avatar))
       render json: @user, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
