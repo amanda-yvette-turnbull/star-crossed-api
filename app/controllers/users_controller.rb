@@ -26,7 +26,12 @@ class UsersController < ApplicationController
 
   def showpotentials
     @user = User.select('preference').find(params[:id])
-    puts @user.preference
+    @users = User.joins(:star_sign).select('users.*, star_signs.id AS star_sign')
+    @preferences = []
+    JSON.parse(@user.preference).each do |gender|
+      @preferences << @users.select('users.*, star_signs.id AS star_sign').where(gender: gender)
+    end
+    render json: @preferences
   end
 
   # Create a user
