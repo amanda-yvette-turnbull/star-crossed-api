@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   scope '/api/v1' do
   resources :star_signs
   resources :users
+  resources :conversations
+  resources :messages
   get '/auth/:auth0_id', to: 'users#showauth'
   get '/potentials/:id', to: 'users#showpotentials'
   
