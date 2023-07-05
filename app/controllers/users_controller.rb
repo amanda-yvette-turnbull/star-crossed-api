@@ -24,6 +24,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def get_chats
+    @user = User.select('matches').find(params[:id])
+    @users = User.joins(:star_sign).select('users.*, star_signs.id AS star_sign')
+    @chats = []
+    puts @user.matches
+    JSON.parse(@user.matches).each do |match_id|
+      @chats += @users.select('users.*, star_signs.id AS star_sign').where(id: match_id)
+    end
+    render json: @chats
+  end
+
+
   def showpotentials
     @user = User.select('preference').find(params[:id])
     @users = User.joins(:star_sign).select('users.*, star_signs.id AS star_sign')
