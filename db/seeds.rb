@@ -16,7 +16,7 @@ StarSign.create(date_range: '02/19-03/20', name: 'Pisces', blurb: 'Gonna Cry?', 
 
 # Users
 User.create(auth0_id: '1', name: 'Oscar', age: 25, email: 'oscar@mail.com', gender: 'masc', preference: '["masc", "femme", "them"]', bio: 'great dancer', birthday: '1/3', image: 'images/users/oscar.jpg', star_sign_id: '11', matches: '[]', compatibility: '[1,2,4,3,2,1,4,5,3,5,1,2]')
-User.create(auth0_id: '2', name: 'Ektaj', age: 25, email: 'ektaj@gmail.com', gender: 'masc', preference: '["femme"]', bio: 'Strong as G', birthday: '', image: 'images/user', star_sign_id: '6', matches: '[]', compatibility: '[3,2,4,5,4,1,3,1,2,3,5,1]')
+User.create(auth0_id: '2', name: 'Ektaj', age: 25, email: 'ektaj@gmail.com', gender: 'masc', preference: '["femme"]', bio: 'Strong as G', birthday: '', image: 'images/users/ektaj.jpg', star_sign_id: '6', matches: '[]', compatibility: '[3,2,4,5,4,1,3,1,2,3,5,1]')
 User.create(auth0_id: '3', name: 'Israel', age: 25, email: 'israel25@hotmail.com', gender: 'masc', preference: '["femme"]', bio: 'fefe', birthday: '', image: 'images/users/israel.jpg', star_sign_id: '2', matches: '[]', compatibility: '[2,3,1,4,2,5,1,3,2,5,2,4]')
 User.create(auth0_id: '4', name: 'stefan', age: 18 , email: 'sampleemail@gmail.com', gender: 'masc', preference: '["masc", "femme"]', bio: 'this is my bio', birthday: '', image: 'images/users/stefan.jpg', star_sign_id: '2', matches: '[]', compatibility: '[2,3,1,4,2,5,1,3,2,5,2,4]')
 User.create(auth0_id: '5', name: 'Lorelei', age: 18 , email: 'sampleemail@gmail.com', gender: 'femme', preference: '["femme", "them"]', bio: 'this is my bio', birthday: '', image: 'images/users/lorelei.jpg', star_sign_id: '3', matches: '[]', compatibility: '[4,2,3,2,4,2,5,2,3,1,5,2]')
